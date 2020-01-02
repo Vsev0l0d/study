@@ -1,0 +1,33 @@
+message Schedule {
+	required string day = 0;
+
+	message LESSON1 {
+		required string time = 0;
+		required string room = 1;
+		required string address = 2;
+		required string subjectName = 3;
+		required string teacher = 4;
+	}
+
+	required LESSON1 lesson1 = 1;
+
+	message LESSON2 {
+		required string time = 0;
+		required string room = 1;
+		required string address = 2;
+		required string subjectName = 3;
+		required string teacher = 4;
+	}
+
+	required LESSON2 lesson2 = 2;
+
+	message LESSON3 {
+		required string time = 0;
+		required string room = 1;
+		required string address = 2;
+		required string subjectName = 3;
+		required string teacher = 4;
+	}
+
+	required LESSON3 lesson3 = 3;
+}
